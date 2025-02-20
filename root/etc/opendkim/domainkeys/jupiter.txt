@@ -1,0 +1,3 @@
+jupiter._domainkey	IN	TXT	( "v=DKIM1; h=sha256; k=rsa; "
+	  "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuRYCP4IjY8Lf9/Z6kjd45sZuWAXUuFVs8vgdDXuvGERCDvbpy6SAkDusUmPq+Rb0CLdh1NNv31fKr2OGGQAcsKjDMnt/lu8J+l6zAMa78V67wAEm3Qwq6lwHhsoU0LdUlkiQl+jThBkCSLyvpEiMQc7D3vNwm8fvnW76Sw0w54JaIDYByAQkj+kTAXcShDAUwdou3NDFpmiJKA"
+	  "a8acwUvQxpD3PmiAIzpwL93ugdaCZbE2y1TZYMnAdBiiPdwobwoEzAPbsGlKwnTmADHAc6s9I3nEzZapaX8Nwih83V3ujkhj6VGa66cerIiSLDFRpukxNo9+b07tsk9aGqtX3ZCwIDAQAB" )  ; ----- DKIM key jupiter for hacking-lab.com

@@ -1,0 +1,4 @@
+#!/command/with-contenv bash
+
+echo "Starting opendkim"
+/usr/sbin/opendkim -D -f -x /etc/opendkim/opendkim.conf
