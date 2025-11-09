@@ -1,7 +1,7 @@
 
 services:
   alpine-postfix-hl:
-    image: hackinglab/postfix-ng-hl:latest
+    image: hackinglab/alpine-postfix-hl:latest
     hostname: postfix
     build: .
     restart: always
@@ -10,7 +10,7 @@ services:
       # Uncomment to enable debugging messages:
       #LOGXI: '*'
       maildomain: hacking-lab.com
-      smtp_user: peter:abaeiierffwai,mike.gohan@example.com:asfaisofi
+      smtp_user: ivan.buetler:EBp5CJNcykf7cgmb,no-reply:FIj8qVxZXINXjJOC
     ports:
       - "25:25"
       - "587:587"

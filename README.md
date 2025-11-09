@@ -28,7 +28,7 @@ Configure SMTP Users in your `docker-compose.yml`. The accounts will be created 
       # Uncomment to enable debugging messages:
       #LOGXI: '*'
       maildomain: hacking-lab.com
-      smtp_user: peter:abaeiierffwai,mike.gohan@example.com:asfaisofi
+      smtp_user: ivan.buetler:EBp5CJNcykf7cgmb,no-reply:FIj8qVxZXINXjJOC
 ```
 
 # MAILDOMAIN
@@ -38,13 +38,15 @@ Use the ENV in the `docker-compose.yml`
 # TEST MAIL Port 25
 STARTLS is not supported on port 25
 ```bash
-./smtptest.py -v -n 25 -t -u peter -p abaeiierffwai <sender-mail> <recipient-mail> <hostname> 
-./smtptest.py -v -n 25 -t -u mike.gohan@example.com -p asfaisofi <sender-mail> <recipient-mail> <hostname> 
+./smtptest.py -v -n 25 -t -u ivan.buetler -p EBp5CJNcykf7cgmb <sender-mail> <recipient-mail> <hostname> 
+./smtptest.py -v -n 25 -t -u no-reply -p FIj8qVxZXINXjJOC <sender-mail> <recipient-mail> <hostname> 
 ```
 
 # TEST MAIL Port 587
 STARTLS is supported on port 587
 ```bash
+./smtptest.py -v -n 587 -t -u ivan.buetler -p EBp5CJNcykf7cgmb <sender-mail> <recipient-mail> <hostname> 
+./smtptest.py -v -n 587 -t -u no-reply -p FIj8qVxZXINXjJOC <sender-mail> <recipient-mail> <hostname> 
 ./smtptest.py -v -n 587 -t -u peter -p abaeiierffwai <sender-mail> <recipient-mail> <hostname> 
 ./smtptest.py -v -n 587 -t -u mike.gohan@example.com -p asfaisofi <sender-mail> <recipient-mail> <hostname> 
 ```

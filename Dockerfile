@@ -9,5 +9,5 @@ RUN apk add --no-cache --update \
         cyrus-sasl cyrus-sasl-crammd5 cyrus-sasl-digestmd5 cyrus-sasl-login cyrus-sasl-ntlm postfix \
         openssl opendkim opendkim-utils syslog-ng ca-certificates tzdata musl musl-utils
 
-# Expose the ports for nginx
+# Expose the ports for postfix
 EXPOSE 25
