@@ -1,6 +1,0 @@
-#!/command/with-contenv bash
-
-echo "Starting postfix"
-/usr/sbin/postfix -c /etc/postfix start-fg
-
-

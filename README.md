@@ -47,6 +47,4 @@ STARTLS is supported on port 587
 ```bash
 ./smtptest.py -v -n 587 -t -u ivan.buetler -p EBp5CJNcykf7cgmb <sender-mail> <recipient-mail> <hostname> 
 ./smtptest.py -v -n 587 -t -u no-reply -p FIj8qVxZXINXjJOC <sender-mail> <recipient-mail> <hostname> 
-./smtptest.py -v -n 587 -t -u peter -p abaeiierffwai <sender-mail> <recipient-mail> <hostname> 
-./smtptest.py -v -n 587 -t -u mike.gohan@example.com -p asfaisofi <sender-mail> <recipient-mail> <hostname> 
 ```
