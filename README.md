@@ -42,9 +42,28 @@ STARTLS is not supported on port 25
 ./smtptest.py -v -n 25 -t -u no-reply -p FIj8qVxZXINXjJOC <sender-mail> <recipient-mail> <hostname> 
 ```
 
+or
+```bash
+apt install swaks
+swaks --to <recipient-mail> --from <sender-mail> --server localhost --port 25 
+```
+
 # TEST MAIL Port 587
 STARTLS is supported on port 587
 ```bash
 ./smtptest.py -v -n 587 -t -u ivan.buetler -p EBp5CJNcykf7cgmb <sender-mail> <recipient-mail> <hostname> 
 ./smtptest.py -v -n 587 -t -u no-reply -p FIj8qVxZXINXjJOC <sender-mail> <recipient-mail> <hostname> 
 ```
+
+or
+
+```bash
+swaks --port 587 --tls \
+--auth LOGIN --auth-user ivan.buetler \
+--auth-password EBp5CJNcykf7cgmb \
+--to <recipient-mail> \
+--from <sender-mail> \
+--server localhost
+```
+
+
